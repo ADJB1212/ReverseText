@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main Video View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainVideoViewController" customModule="Reverse_Text" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" id="9ck-pK-VxW">
+                                <rect key="frame" x="24" y="44" width="343" height="609"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" id="bAQ-Zv-JvI" customClass="DrawingView" customModule="Reverse_Text" customModuleProvider="target">
+                                <rect key="frame" x="24" y="44" width="343" height="609"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="rorrE" textAlignment="natural" id="4c0-K6-C08">
+                                <rect key="frame" x="24" y="44" width="343" height="609"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sa3-Pi-CUL">
+                                <rect key="frame" x="113" y="752" width="164" height="35"/>
+                                <color key="backgroundColor" red="0.95699999999999996" green="0.95686274509803915" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Sa3-Pi-CUL" secondAttribute="height" multiplier="164:35" id="aZq-dU-bCp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="esreveR">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="13"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="convertButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8a7-Uc-kMh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qjo-a3-w8Q">
+                                <rect key="frame" x="302" y="755" width="72" height="30"/>
+                                <state key="normal" title="esolC txeT">
+                                    <color key="titleColor" red="0.47599999999999998" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="closeTextButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fK4-gW-LrQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eaT-1D-PIh">
+                                <rect key="frame" x="24" y="755" width="81" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="eaT-1D-PIh" secondAttribute="height" multiplier="27:10" id="OQt-hC-KWs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="tintColor" red="0.47450980392156861" green="0.47450980392156861" blue="0.47450980392156861" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <imageReference key="image" image="printer" catalog="system" symbolScale="large"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="semibold"/>
+                                </state>
+                                <connections>
+                                    <action selector="printButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MX9-oA-nYH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9ck-pK-VxW" secondAttribute="trailing" constant="23" id="4Yi-Oh-MfY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Sa3-Pi-CUL" secondAttribute="bottom" constant="23" id="7Mt-ne-vCA"/>
+                            <constraint firstItem="Sa3-Pi-CUL" firstAttribute="top" secondItem="4c0-K6-C08" secondAttribute="bottom" constant="99" id="7rP-uY-bfj"/>
+                            <constraint firstItem="Sa3-Pi-CUL" firstAttribute="leading" secondItem="eaT-1D-PIh" secondAttribute="trailing" constant="8" id="9xp-0i-FDo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="eaT-1D-PIh" secondAttribute="bottom" constant="25" id="GQh-T5-wOj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4c0-K6-C08" secondAttribute="trailing" constant="23" id="Hzy-g8-cUG"/>
+                            <constraint firstItem="9ck-pK-VxW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="Jy6-0f-7WA"/>
+                            <constraint firstItem="Sa3-Pi-CUL" firstAttribute="top" secondItem="9ck-pK-VxW" secondAttribute="bottom" constant="99" id="NMV-ei-Map"/>
+                            <constraint firstItem="9ck-pK-VxW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Tpf-gq-Hmn"/>
+                            <constraint firstItem="Qjo-a3-w8Q" firstAttribute="top" secondItem="9ck-pK-VxW" secondAttribute="bottom" constant="102" id="Wse-9l-iyg"/>
+                            <constraint firstItem="eaT-1D-PIh" firstAttribute="top" secondItem="9ck-pK-VxW" secondAttribute="bottom" constant="102" id="Y5Y-sT-4KP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Qjo-a3-w8Q" secondAttribute="bottom" constant="25" id="gBE-OF-Q2y"/>
+                            <constraint firstItem="4c0-K6-C08" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="gyH-Uq-MwB"/>
+                            <constraint firstItem="Sa3-Pi-CUL" firstAttribute="top" secondItem="9ck-pK-VxW" secondAttribute="bottom" constant="99" id="hxl-dl-4MV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Sa3-Pi-CUL" secondAttribute="trailing" constant="113" id="iAF-46-WZr"/>
+                            <constraint firstItem="eaT-1D-PIh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="lA5-Py-cdB"/>
+                            <constraint firstItem="Sa3-Pi-CUL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="113" id="oxk-4T-Q2Y"/>
+                            <constraint firstItem="4c0-K6-C08" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="rBZ-rE-mHG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Qjo-a3-w8Q" secondAttribute="trailing" constant="16" id="t1c-6Y-1ld"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="CloseTextButtonOutlet" destination="Qjo-a3-w8Q" id="BTQ-Br-CB0"/>
+                        <outlet property="MainView" destination="8bC-Xf-vdC" id="C13-Xp-q7B"/>
+                        <outlet property="convertButtonOutlet" destination="Sa3-Pi-CUL" id="4Ma-cq-Scx"/>
+                        <outlet property="drawingView" destination="bAQ-Zv-JvI" id="wX1-a9-GL4"/>
+                        <outlet property="printButtonOutlet" destination="eaT-1D-PIh" id="CBw-0U-hSR"/>
+                        <outlet property="textView" destination="4c0-K6-C08" id="01Q-gR-rN7"/>
+                        <outlet property="videoPreview" destination="9ck-pK-VxW" id="9H9-1k-BfZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="160" y="133.64928909952607"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="printer" catalog="system" width="128" height="111"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
